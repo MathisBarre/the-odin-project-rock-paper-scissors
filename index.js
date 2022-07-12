@@ -64,3 +64,14 @@ function playRound(playerSelection, computerSelection) {
     throw error
   }
 }
+
+function game() {
+  for (let i = 0; i < 5; i++) {
+    const playerSelection = prompt("Rock, Paper or Scissors ?")
+    const computerSelection = computerPlay();
+  
+    console.log(playRound(playerSelection, computerSelection));
+  }
+}
+
+game()
